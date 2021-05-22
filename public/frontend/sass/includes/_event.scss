@@ -1,0 +1,71 @@
+.events {
+    position: relative;
+    padding-right: 50px;
+
+    .event {
+        background: rgba(255, 255, 255, 0.15);
+        border-left: 1px solid $gray;
+        margin-bottom: 30px;
+        padding: 15px 10px;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .event-date {
+            width: 100px;
+            text-align: center;
+
+            span {
+                display: block;
+                font-size: 30px;
+                font-weight: 700;
+                
+            }
+
+            strong {
+                color: $default;
+            }
+        }
+
+
+        .event-content {
+            width: calc(100% - 100px);
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                margin-top: 15px;
+            }
+        }
+        
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        list-style: none;
+        
+        li {
+            margin-bottom: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: $lightGray;
+            cursor: pointer;
+
+            &.slick-active {
+                background: $default;
+            }
+
+            button {
+                opacity: 0;
+                border: 0px solid transparent;
+            }
+        }
+    }
+}

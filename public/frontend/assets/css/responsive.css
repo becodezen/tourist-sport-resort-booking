@@ -1,0 +1,126 @@
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+}
+
+/* On screens that are 768 or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+    .container {
+        min-width: calc(100% - 50px) !important;
+    }
+    .header-top-bar {
+        display: none;
+    }
+
+    .header-logo .responsive-menu-bar{
+        display: block;
+        color: #fff;
+        padding: 5px 10px;
+    }
+
+    .mainmenu {
+        display: none;
+    }
+
+    .resorts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .tourist-spot-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .pagination-center {
+        display: none;
+    }
+
+    .pagination-center.responsive-pagination {
+        display: block;
+    }
+
+    .pagination-center nav .pagination {
+        justify-content: space-between;
+    }
+
+    .hz-form-filter .form-group {
+        margin: 5px 0px;
+        width: 100%;
+        flex: none;
+    }
+
+    .dashboard {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .dashboard-content-area {
+        width: 100%;
+    }
+
+}
+
+/* On screens that are 480 or less, set the background color to blue */
+@media screen and (max-width: 480px) {
+    .container {
+        min-width: calc(100% - 20px) !important;
+    }
+
+    .header-top-bar {
+        display: none;
+    }
+
+    .header-logo .responsive-menu-bar{
+        display: block;
+        color: #fff;
+        padding: 5px 10px;
+    }
+
+    .mainmenu {
+        display: none;
+    }
+
+    .mobile-view {
+        display: block;
+    }
+
+    .web-view {
+        display: none;
+    }
+
+    .resorts-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    .resort-area .resorts .resort {
+        margin-right: 0px;
+    }
+
+    .tourist-spot-items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    .hz-form-filter .form-group {
+        margin: 5px 0px;
+        width: 100%;
+        flex: none;
+    }
+
+    .dashboard-sidebar {
+        display: none;
+    }
+
+}
+
+/* On screens that are 360 or less, set the background color to blue */
+@media screen and (max-width: 360) {
+
+}

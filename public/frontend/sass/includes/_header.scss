@@ -1,0 +1,131 @@
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    z-index: 999999;
+    
+    .logo {
+        padding: 15px 0px;
+
+        img {
+            width: 100%;
+            transition: 300ms;
+        }
+
+        h1 {
+            color: $white;
+            transition: 300ms;
+        }
+    }
+
+    .mainmenu {
+        .navbar {
+            padding: 0;
+            .navbar-nav {
+                .nav-item {
+                    a {
+                        padding: 30px 15px;
+                        color: $white;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                    }
+
+                    &:hover {
+                        a {
+                            color: $default;
+                        }
+                    }
+                    
+                    &.has-children {
+                        position: relative;
+
+                        .children {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            min-width: 200px;
+                            background: #fffffff3;
+                            opacity: 0;
+                            visibility: hidden;
+                            list-style: none;
+                            transform-origin: 0% 0%;
+                            transform: rotateX(-75deg);
+                            transform-style: preserve-3d;
+                            box-shadow: 0px 0px 0px 0px $shadowBlack;
+                            transition: 300ms;
+                            z-index: 99;
+
+                             li {
+                                 a {
+                                     color: $dark;
+                                     display: block;
+                                     font-size: 14px;
+                                     padding: 10px 15px;
+                                     text-decoration: none;
+                                     text-transform: capitalize;
+                                     transition: 300ms;
+                                 }
+
+                                 &:hover {
+                                     a {
+                                         color: $default;
+                                         background: $white;
+                                     }
+                                 }
+                             }
+                        }
+                        &:hover {
+                            .children {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: rotateX(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        background: #fffffff3;
+        padding: 5px 0px;
+        transition: 300ms ease-out;
+        box-shadow: 0px 0px 10px 0px $shadowBlack;
+
+        .logo {
+            padding: 10px 0px;
+
+            img {
+                width: 80%;
+            }
+
+            h1 {
+                color: $black;
+            }
+        }
+
+        .mainmenu {
+            .navbar {
+                .navbar-nav {
+                    .nav-item {
+                        a {
+                            color: $dark;
+                            padding: 25px 15px;
+                        }
+                        &:hover {
+                            a {
+                                color: $default;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+}

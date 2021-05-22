@@ -1,0 +1,22 @@
+.login-form {
+    background: $white;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px 0px #00000030;
+
+    .login-header {
+        margin-bottom: 50px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .login-body {
+        .form-control {
+            border-radius: 0px;
+            height: 45px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

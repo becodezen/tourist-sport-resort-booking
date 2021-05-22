@@ -1,0 +1,53 @@
+/*
+  Theme Name: Bhromon Bilash
+  Author: Belal Khan
+  Description: Bhromon Bilash is a Resort/Hotel Booking Platform
+  Version: 1.0.0
+*/
+
+@import './includes/variables';
+@import './includes/mixins';
+
+/* 
+--------------------------------
+        Table of Contents
+================================
+    1. Common css
+    2. Header
+    3. Slider
+    4. Resort
+    5. Destination
+    6. Event
+    *. Footer
+--------------------------------
+*/ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* 1. Common css */
+@import './includes/common';
+
+/* 2. Header */ 
+@import './includes/header';
+
+/* 3. Slider */
+@import './includes/slider';
+
+/* 4. Resort */ 
+@import './includes/resort';
+
+/* 5. Destination */ 
+@import './includes/destination';
+
+/* 6. Event */
+@import './includes/event' ;
+
+/* 7. Testimonials */
+@import './includes/testimonial'; 
+
+/* *.Footer */ 
+@import './includes/footer';
+
+/* *.Login */
+@import './includes/login'; 
+
+

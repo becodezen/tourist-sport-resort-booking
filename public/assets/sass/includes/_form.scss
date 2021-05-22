@@ -1,0 +1,20 @@
+.form-group {
+    label {
+        color: $dark;
+        font-family: $heading;
+    }
+    .form-control {
+        font-size: 14px;
+        font-weight: 400;
+        color: $dark;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $primary;
+        }
+        
+        &::placeholder {
+            font-weight: 300;
+        }
+    }
+}

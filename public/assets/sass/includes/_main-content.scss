@@ -1,0 +1,18 @@
+.main-content-area {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+    transition: 300ms linear;
+    padding: 15px 0px;
+}
+
+.page-info {
+    margin-bottom: 30px;
+
+    .page-title {
+        font-weight: 500;
+    }
+
+    .page-description {
+        font-weight: 300;
+    }
+}

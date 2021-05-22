@@ -1,0 +1,36 @@
+@import './includes/variables';
+
+@import './includes/common';
+
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@import './includes/header';
+
+
+.page-content-area {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    width: 100%;
+    min-height: calc(100% - 50px);
+    top: 50px;
+    overflow: hidden;
+}
+
+@import './includes/main-content';
+
+@import './includes/sidebar';
+
+@import './includes/box';
+
+@import './includes/table';
+
+@import './includes/form';
